@@ -1,0 +1,5 @@
+# Created at 2024-10-05T09:31:10.272
+Boot Manifest-JAR contains absolute paths in classpath 'E:\techm\section6\dockercompose\dockercomposews\naming-server\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

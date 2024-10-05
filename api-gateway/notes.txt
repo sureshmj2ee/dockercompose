@@ -1,0 +1,36 @@
+application.properties
+
+spring.application.name=api-gateway
+server.port=8765
+
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+
+eureka.instance.prefer-ip-address=true
+#eureka.instance.hostname=localhost
+
+#this is important property. API gateway now can call other services
+# example http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/USD/to/INR  
+spring.cloud.gateway.discovery.locator.enabled=true
+
+#spring.cloud.gateway.discovery.locator.lower-case-service-id=true
+
+#spring.cloud.gateway.discovery.locator.lowerCaseServiceId=true
+
+Note:
+We need to add these properties before java configuration.
+if enable java based configuration. we can comment these properties
+
+
+Eureka:
+http://localhost:8761/
+
+http://localhost:8765/currency-conversion/from/USD/to/INR/quantity/10
+http://localhost:8765/currency-conversion-new/from/USD/to/INR/quantity/10
+http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+
+http://localhost:8765/currency-exchange/from/USD/to/INR
+
+
+
+ 
