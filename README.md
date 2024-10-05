@@ -8,11 +8,12 @@ Project requirements: Java 21 and eclipse latest
 6) open powershell from start menu. execute below the command
 7) docker image list
 8) navigate to where you have folder structue imported in your local contains docker-compose.yaml file
-9) execute command to make all container up and running
+9) execute command to make all container up and running.
+   
     docker-compose up
-10) now test api url
+11) now test api url
     http://localhost:8761
     http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
     http://localhost:8765/currency-exchange/from/USD/to/INR
     http://localhost:9411/zipkin/
-11) Happy Learning!! 
+12) Happy Learning!! 
