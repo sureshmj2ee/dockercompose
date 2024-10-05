@@ -12,8 +12,13 @@ Project requirements: Java 21 and eclipse latest
    
     docker-compose up
 11) now test api url
+    
     http://localhost:8761
+    
     http://localhost:8765/currency-conversion-feign/from/USD/to/INR/quantity/10
+    
     http://localhost:8765/currency-exchange/from/USD/to/INR
+    
     http://localhost:9411/zipkin/
-12) Happy Learning!! 
+    
+13) Happy Learning!! 
